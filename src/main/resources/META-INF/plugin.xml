@@ -1,20 +1,26 @@
 <idea-plugin>
     <id>org.jetbrains.intellij-uber-injector</id>
-    <name>Plugin display name here</name>
-    <vendor email="support@yourcompany.com" url="http://www.yourcompany.com">YourCompany</vendor>
+    <name>Handy Reference Injections</name>
+    <vendor>JetBrains</vendor>
 
     <description><![CDATA[
-    Enter short description for your plugin here.<br>
-    <em>most HTML tags may be used</em>
+    Provides additional reference injectors: MIME Type, HTTP Header, KafkaTopic, Issue, Teammate ID
     ]]></description>
 
-    <depends>com.intellij.modules.platform</depends>
+    <depends>com.intellij.modules.java</depends>
+    <depends>org.intellij.intelliLang</depends>
 
     <extensions defaultExtensionNs="com.intellij">
-        <!-- Add your extensions here -->
-    </extensions>
+        <referenceInjector implementation="org.jetbrains.uberinjector.MimeTypeInjector"/>
+        <referenceInjector implementation="org.jetbrains.uberinjector.KafkaTopicInjector"/>
+        <referenceInjector implementation="org.jetbrains.uberinjector.HttpHeaderInjector"/>
 
-    <actions>
-        <!-- Add your actions here -->
-    </actions>
+        <referenceInjector implementation="org.jetbrains.uberinjector.TeammateInjector"/>
+        <referenceInjector implementation="org.jetbrains.uberinjector.IssueCodeInjector"/>
+
+        <localInspection language="UAST"
+                         groupName="UBER-Injector"
+                         displayName="Unknown HTTP Header name"
+                         implementationClass="org.jetbrains.uberinjector.UnknownHttpHeaderInspection"/>
+    </extensions>
 </idea-plugin>

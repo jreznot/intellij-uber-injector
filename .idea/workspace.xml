@@ -1,23 +1,82 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b6cffb53-3219-496c-b537-282cad342798" name="Default Changelist" comment="" />
+    <list default="true" id="b6cffb53-3219-496c-b537-282cad342798" name="Default Changelist" comment="Project stub">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/artamonov.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/org/jetbrains/uberinjector/CompletionData.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/org/jetbrains/uberinjector/CustomHttpHeadersStore.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/org/jetbrains/uberinjector/HttpHeaderInjector.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/org/jetbrains/uberinjector/IssueCodeInjector.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/org/jetbrains/uberinjector/KafkaTopicInjector.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/org/jetbrains/uberinjector/MimeTypeInjector.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/org/jetbrains/uberinjector/TeammateInjector.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/org/jetbrains/uberinjector/UnknownHttpHeaderInspection.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/plugin.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/plugin.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+        <projects_view>
+          <tree_state>
+            <expand>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="intellij-uber-injector" type="f1a62948:ProjectNode" />
+              </path>
+            </expand>
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Kotlin Object" />
+        <option value="Kotlin Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1UAaQYPraXSCmagiWYwMVS4njq6" />
   <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="android.sdk.path" value="$USER_HOME$/Android/Sdk" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
   <component name="RunManager">
     <configuration name="Plugin" type="GradleRunConfiguration" factoryName="Gradle">
@@ -54,5 +113,55 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Project stub" />
+    <option name="LAST_COMMIT_MESSAGE" value="Project stub" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="718" y="10" key="#com.intellij.ide.util.MemberChooser" timestamp="1574833716275">
+      <screen x="0" y="0" width="1857" height="1080" />
+    </state>
+    <state x="718" y="10" key="#com.intellij.ide.util.MemberChooser/0.0.1857.1080@0.0.1857.1080" timestamp="1574833716275" />
+    <state width="1857" height="362" key="GridCell.Tab.0.bottom" timestamp="1574802222844">
+      <screen x="0" y="0" width="1857" height="1080" />
+    </state>
+    <state width="1857" height="362" key="GridCell.Tab.0.bottom/0.0.1857.1080@0.0.1857.1080" timestamp="1574802222844" />
+    <state width="1857" height="362" key="GridCell.Tab.0.center" timestamp="1574802222843">
+      <screen x="0" y="0" width="1857" height="1080" />
+    </state>
+    <state width="1857" height="362" key="GridCell.Tab.0.center/0.0.1857.1080@0.0.1857.1080" timestamp="1574802222843" />
+    <state width="1857" height="362" key="GridCell.Tab.0.left" timestamp="1574802222842">
+      <screen x="0" y="0" width="1857" height="1080" />
+    </state>
+    <state width="1857" height="362" key="GridCell.Tab.0.left/0.0.1857.1080@0.0.1857.1080" timestamp="1574802222842" />
+    <state width="1857" height="362" key="GridCell.Tab.0.right" timestamp="1574802222844">
+      <screen x="0" y="0" width="1857" height="1080" />
+    </state>
+    <state width="1857" height="362" key="GridCell.Tab.0.right/0.0.1857.1080@0.0.1857.1080" timestamp="1574802222844" />
+    <state width="1857" height="362" key="GridCell.Tab.1.bottom" timestamp="1574802222847">
+      <screen x="0" y="0" width="1857" height="1080" />
+    </state>
+    <state width="1857" height="362" key="GridCell.Tab.1.bottom/0.0.1857.1080@0.0.1857.1080" timestamp="1574802222847" />
+    <state width="1857" height="362" key="GridCell.Tab.1.center" timestamp="1574802222845">
+      <screen x="0" y="0" width="1857" height="1080" />
+    </state>
+    <state width="1857" height="362" key="GridCell.Tab.1.center/0.0.1857.1080@0.0.1857.1080" timestamp="1574802222845" />
+    <state width="1857" height="362" key="GridCell.Tab.1.left" timestamp="1574802222845">
+      <screen x="0" y="0" width="1857" height="1080" />
+    </state>
+    <state width="1857" height="362" key="GridCell.Tab.1.left/0.0.1857.1080@0.0.1857.1080" timestamp="1574802222845" />
+    <state width="1857" height="362" key="GridCell.Tab.1.right" timestamp="1574802222846">
+      <screen x="0" y="0" width="1857" height="1080" />
+    </state>
+    <state width="1857" height="362" key="GridCell.Tab.1.right/0.0.1857.1080@0.0.1857.1080" timestamp="1574802222846" />
+    <state x="430" y="112" key="SettingsEditor" timestamp="1574833035839">
+      <screen x="0" y="0" width="1857" height="1080" />
+    </state>
+    <state x="430" y="112" key="SettingsEditor/0.0.1857.1080@0.0.1857.1080" timestamp="1574833035839" />
+    <state x="591" y="215" width="672" height="678" key="search.everywhere.popup" timestamp="1574833186461">
+      <screen x="0" y="0" width="1857" height="1080" />
+    </state>
+    <state x="591" y="215" width="672" height="678" key="search.everywhere.popup/0.0.1857.1080@0.0.1857.1080" timestamp="1574833186461" />
   </component>
 </project>
