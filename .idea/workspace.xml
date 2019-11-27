@@ -1,27 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b6cffb53-3219-496c-b537-282cad342798" name="Default Changelist" comment="Project stub">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/artamonov.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradlew.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/org/jetbrains/uberinjector/CompletionData.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/org/jetbrains/uberinjector/CustomHttpHeadersStore.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/org/jetbrains/uberinjector/HttpHeaderInjector.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/org/jetbrains/uberinjector/IssueCodeInjector.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/org/jetbrains/uberinjector/KafkaTopicInjector.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/org/jetbrains/uberinjector/MimeTypeInjector.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/org/jetbrains/uberinjector/TeammateInjector.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/org/jetbrains/uberinjector/UnknownHttpHeaderInspection.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+    <list default="true" id="b6cffb53-3219-496c-b537-282cad342798" name="Default Changelist" comment="Declare extension points">
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/org/jetbrains/uberinjector/UberInjectorIcons.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/META-INF/pluginIcon.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/icons/chat.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/icons/link.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/icons/messages.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/icons/text.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/icons/users.svg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/plugin.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/plugin.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/org/jetbrains/uberinjector/CustomHttpHeadersStore.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/org/jetbrains/uberinjector/CustomHttpHeadersStore.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/org/jetbrains/uberinjector/HttpHeaderInjector.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/org/jetbrains/uberinjector/HttpHeaderInjector.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/org/jetbrains/uberinjector/IssueCodeInjector.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/org/jetbrains/uberinjector/IssueCodeInjector.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/org/jetbrains/uberinjector/KafkaTopicInjector.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/org/jetbrains/uberinjector/KafkaTopicInjector.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/org/jetbrains/uberinjector/MimeTypeInjector.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/org/jetbrains/uberinjector/MimeTypeInjector.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/org/jetbrains/uberinjector/TeammateInjector.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/org/jetbrains/uberinjector/TeammateInjector.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,8 +50,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Kotlin Object" />
         <option value="Kotlin Class" />
+        <option value="Kotlin Object" />
       </list>
     </option>
   </component>
@@ -73,10 +67,17 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="android.sdk.path" value="$USER_HOME$/Android/Sdk" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources/icons" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources/icons" />
+      <recent name="$PROJECT_DIR$/src/main/resources/META-INF" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration name="Plugin" type="GradleRunConfiguration" factoryName="Gradle">
@@ -116,52 +117,65 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Project stub" />
-    <option name="LAST_COMMIT_MESSAGE" value="Project stub" />
+    <MESSAGE value="Declare extension points" />
+    <option name="LAST_COMMIT_MESSAGE" value="Declare extension points" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="718" y="10" key="#com.intellij.ide.util.MemberChooser" timestamp="1574833716275">
+    <state x="718" y="134" key="#com.intellij.ide.util.MemberChooser" timestamp="1574860100600">
       <screen x="0" y="0" width="1857" height="1080" />
     </state>
-    <state x="718" y="10" key="#com.intellij.ide.util.MemberChooser/0.0.1857.1080@0.0.1857.1080" timestamp="1574833716275" />
-    <state width="1857" height="362" key="GridCell.Tab.0.bottom" timestamp="1574802222844">
+    <state x="718" y="134" key="#com.intellij.ide.util.MemberChooser/0.0.1857.1080@0.0.1857.1080" timestamp="1574860100600" />
+    <state width="1857" height="362" key="GridCell.Tab.0.bottom" timestamp="1574860874765">
       <screen x="0" y="0" width="1857" height="1080" />
     </state>
-    <state width="1857" height="362" key="GridCell.Tab.0.bottom/0.0.1857.1080@0.0.1857.1080" timestamp="1574802222844" />
-    <state width="1857" height="362" key="GridCell.Tab.0.center" timestamp="1574802222843">
+    <state width="1857" height="362" key="GridCell.Tab.0.bottom/0.0.1857.1080@0.0.1857.1080" timestamp="1574860874765" />
+    <state width="1857" height="362" key="GridCell.Tab.0.center" timestamp="1574860874764">
       <screen x="0" y="0" width="1857" height="1080" />
     </state>
-    <state width="1857" height="362" key="GridCell.Tab.0.center/0.0.1857.1080@0.0.1857.1080" timestamp="1574802222843" />
-    <state width="1857" height="362" key="GridCell.Tab.0.left" timestamp="1574802222842">
+    <state width="1857" height="362" key="GridCell.Tab.0.center/0.0.1857.1080@0.0.1857.1080" timestamp="1574860874764" />
+    <state width="1857" height="362" key="GridCell.Tab.0.left" timestamp="1574860874763">
       <screen x="0" y="0" width="1857" height="1080" />
     </state>
-    <state width="1857" height="362" key="GridCell.Tab.0.left/0.0.1857.1080@0.0.1857.1080" timestamp="1574802222842" />
-    <state width="1857" height="362" key="GridCell.Tab.0.right" timestamp="1574802222844">
+    <state width="1857" height="362" key="GridCell.Tab.0.left/0.0.1857.1080@0.0.1857.1080" timestamp="1574860874763" />
+    <state width="1857" height="362" key="GridCell.Tab.0.right" timestamp="1574860874765">
       <screen x="0" y="0" width="1857" height="1080" />
     </state>
-    <state width="1857" height="362" key="GridCell.Tab.0.right/0.0.1857.1080@0.0.1857.1080" timestamp="1574802222844" />
-    <state width="1857" height="362" key="GridCell.Tab.1.bottom" timestamp="1574802222847">
+    <state width="1857" height="362" key="GridCell.Tab.0.right/0.0.1857.1080@0.0.1857.1080" timestamp="1574860874765" />
+    <state width="1857" height="362" key="GridCell.Tab.1.bottom" timestamp="1574860874768">
       <screen x="0" y="0" width="1857" height="1080" />
     </state>
-    <state width="1857" height="362" key="GridCell.Tab.1.bottom/0.0.1857.1080@0.0.1857.1080" timestamp="1574802222847" />
-    <state width="1857" height="362" key="GridCell.Tab.1.center" timestamp="1574802222845">
+    <state width="1857" height="362" key="GridCell.Tab.1.bottom/0.0.1857.1080@0.0.1857.1080" timestamp="1574860874768" />
+    <state width="1857" height="362" key="GridCell.Tab.1.center" timestamp="1574860874766">
       <screen x="0" y="0" width="1857" height="1080" />
     </state>
-    <state width="1857" height="362" key="GridCell.Tab.1.center/0.0.1857.1080@0.0.1857.1080" timestamp="1574802222845" />
-    <state width="1857" height="362" key="GridCell.Tab.1.left" timestamp="1574802222845">
+    <state width="1857" height="362" key="GridCell.Tab.1.center/0.0.1857.1080@0.0.1857.1080" timestamp="1574860874766" />
+    <state width="1857" height="362" key="GridCell.Tab.1.left" timestamp="1574860874766">
       <screen x="0" y="0" width="1857" height="1080" />
     </state>
-    <state width="1857" height="362" key="GridCell.Tab.1.left/0.0.1857.1080@0.0.1857.1080" timestamp="1574802222845" />
-    <state width="1857" height="362" key="GridCell.Tab.1.right" timestamp="1574802222846">
+    <state width="1857" height="362" key="GridCell.Tab.1.left/0.0.1857.1080@0.0.1857.1080" timestamp="1574860874766" />
+    <state width="1857" height="362" key="GridCell.Tab.1.right" timestamp="1574860874767">
       <screen x="0" y="0" width="1857" height="1080" />
     </state>
-    <state width="1857" height="362" key="GridCell.Tab.1.right/0.0.1857.1080@0.0.1857.1080" timestamp="1574802222846" />
+    <state width="1857" height="362" key="GridCell.Tab.1.right/0.0.1857.1080@0.0.1857.1080" timestamp="1574860874767" />
     <state x="430" y="112" key="SettingsEditor" timestamp="1574833035839">
       <screen x="0" y="0" width="1857" height="1080" />
     </state>
     <state x="430" y="112" key="SettingsEditor/0.0.1857.1080@0.0.1857.1080" timestamp="1574833035839" />
-    <state x="591" y="215" width="672" height="678" key="search.everywhere.popup" timestamp="1574833186461">
+    <state x="316" y="127" width="1238" height="788" key="Vcs.Push.Dialog.v2" timestamp="1574834821157">
       <screen x="0" y="0" width="1857" height="1080" />
     </state>
-    <state x="591" y="215" width="672" height="678" key="search.everywhere.popup/0.0.1857.1080@0.0.1857.1080" timestamp="1574833186461" />
+    <state x="316" y="127" width="1238" height="788" key="Vcs.Push.Dialog.v2/0.0.1857.1080@0.0.1857.1080" timestamp="1574834821157" />
+    <state x="591" y="261" width="674" height="526" key="find.popup" timestamp="1574859288468">
+      <screen x="0" y="0" width="1857" height="1080" />
+    </state>
+    <state x="591" y="261" width="674" height="526" key="find.popup/0.0.1857.1080@0.0.1857.1080" timestamp="1574859288468" />
+    <state x="678" y="121" key="refactoring.ChangeSignatureDialog" timestamp="1574860575004">
+      <screen x="0" y="0" width="1857" height="1080" />
+    </state>
+    <state x="678" y="121" key="refactoring.ChangeSignatureDialog/0.0.1857.1080@0.0.1857.1080" timestamp="1574860575004" />
+    <state x="591" y="215" width="672" height="678" key="search.everywhere.popup" timestamp="1574860560803">
+      <screen x="0" y="0" width="1857" height="1080" />
+    </state>
+    <state x="591" y="215" width="672" height="678" key="search.everywhere.popup/0.0.1857.1080@0.0.1857.1080" timestamp="1574860560803" />
   </component>
 </project>
