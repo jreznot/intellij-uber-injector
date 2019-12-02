@@ -1,4 +1,6 @@
-# uber-injector
+# intellij-uber-injector
+
+[![JetBrains team project](http://jb.gg/badges/team.svg)](https://confluence.jetbrains.com/display/ALL/JetBrains+on+GitHub)
 
 IntelliJ IDEA Reference Injection Show Case.
 
