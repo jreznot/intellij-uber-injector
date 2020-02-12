@@ -64,7 +64,7 @@ class KafkaTopicInjector : ReferenceInjector() {
             val value = value
             if (!validate(value)) return null
 
-            return KafkaTopicPsiElement(element, getReferenceTypeName())
+            return KafkaTopicPsiElement(element, value, getReferenceTypeName())
         }
 
         override fun getUnresolvedMessagePattern(): String {
@@ -76,7 +76,7 @@ class KafkaTopicInjector : ReferenceInjector() {
         }
 
         override fun isReferenceTo(element: PsiElement): Boolean {
-            return element is KafkaTopicPsiElement
+            return element is KafkaTopicPsiElement && this.value == element.topicId
         }
 
         override fun getVariants(): Array<Any> {
@@ -88,6 +88,7 @@ class KafkaTopicInjector : ReferenceInjector() {
 
     class KafkaTopicPsiElement(
         private val parent: PsiElement,
+        val topicId: String,
         private val typeName: String
     ) : FakePsiElement(), PsiMetaOwner, PsiPresentableMetaData {
 
@@ -123,6 +124,11 @@ class KafkaTopicInjector : ReferenceInjector() {
 
         override fun getNavigationElement(): PsiElement {
             return parent
+        }
+
+        override fun isEquivalentTo(another: PsiElement?): Boolean {
+            return equals(another) ||
+                    another != null && another is KafkaTopicPsiElement && another.topicId == topicId
         }
     }
 }
