@@ -17,10 +17,5 @@
 
         <referenceInjector implementation="org.jetbrains.uberinjector.TeammateInjector"/>
         <referenceInjector implementation="org.jetbrains.uberinjector.IssueCodeInjector"/>
-
-        <localInspection language="UAST"
-                         groupName="UBER-Injector"
-                         displayName="Unknown HTTP Header name"
-                         implementationClass="org.jetbrains.uberinjector.UnknownHttpHeaderInspection"/>
     </extensions>
 </idea-plugin>
