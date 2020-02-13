@@ -6,9 +6,6 @@ import com.intellij.psi.PsiElement
 import com.intellij.psi.PsiReference
 import com.intellij.psi.injection.ReferenceInjector
 import com.intellij.util.ProcessingContext
-import org.jetbrains.uast.UExpression
-import org.jetbrains.uast.evaluateString
-import org.jetbrains.uast.toUElement
 import javax.swing.Icon
 
 class IssueCodeInjector : ReferenceInjector() {
@@ -19,8 +16,7 @@ class IssueCodeInjector : ReferenceInjector() {
     override fun getIcon(): Icon = UberInjectorIcons.LINK
 
     override fun getReferences(element: PsiElement, context: ProcessingContext, range: TextRange): Array<PsiReference> {
-        val expr = element.toUElement() as? UExpression ?: return emptyArray()
-        val value = expr.evaluateString() ?: return emptyArray()
+        val value = range.substring(element.text)
         if (value.isBlank()) return emptyArray()
 
         val template = "https://youtrack.jetbrains.com/issue/"
