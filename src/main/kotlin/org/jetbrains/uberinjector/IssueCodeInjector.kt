@@ -19,7 +19,7 @@ class IssueCodeInjector : ReferenceInjector() {
         val value = range.substring(element.text)
         if (value.isBlank()) return emptyArray()
 
-        val template = "https://youtrack.jetbrains.com/issue/"
+        val template = "https://youtrack.jetbrains.com/issue/{}"
 
         val url = if (template.contains("{}")) template.replace("{}", value) else template + value
 
