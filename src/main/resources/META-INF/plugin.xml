@@ -10,12 +10,25 @@
     <depends>com.intellij.modules.java</depends>
     <depends>org.intellij.intelliLang</depends>
 
+    <extensions defaultExtensionNs="org.intellij.intelliLang">
+        <!-- Custom injection config -->
+        <injectionConfig config="javaInjections.xml"/>
+    </extensions>
+
     <extensions defaultExtensionNs="com.intellij">
+        <!-- 1. Navigation to Web -->
+        <referenceInjector implementation="org.jetbrains.uberinjector.IssueCodeInjector"/>
+
+        <!-- 2. Auto-completion -->
         <referenceInjector implementation="org.jetbrains.uberinjector.MimeTypeInjector"/>
-        <referenceInjector implementation="org.jetbrains.uberinjector.KafkaTopicInjector"/>
+
+        <!-- 3. Validation and quick fix -->
         <referenceInjector implementation="org.jetbrains.uberinjector.HttpHeaderInjector"/>
 
+        <!-- 4. Find usages -->
         <referenceInjector implementation="org.jetbrains.uberinjector.TeammateInjector"/>
-        <referenceInjector implementation="org.jetbrains.uberinjector.IssueCodeInjector"/>
+
+        <!-- 5. Completion by code and rename refactoring -->
+        <referenceInjector implementation="org.jetbrains.uberinjector.KafkaTopicInjector"/>
     </extensions>
 </idea-plugin>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component name="LanguageInjectionConfiguration">
+    <injection language="JSON" injector-id="java">
+        <display-name>JSON (com.google.gson)</display-name>
+        <place><![CDATA[
+            psiParameter().ofMethod(0, psiMethod().withName("parseString").definedInClass("com.google.gson.JsonParser"))
+            ]]></place>
+    </injection>
+</component>
