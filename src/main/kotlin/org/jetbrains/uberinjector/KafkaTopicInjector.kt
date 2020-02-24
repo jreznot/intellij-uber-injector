@@ -4,6 +4,10 @@ import com.intellij.codeInsight.daemon.EmptyResolveMessageProvider
 import com.intellij.codeInsight.lookup.LookupElementBuilder
 import com.intellij.codeInspection.LocalQuickFix
 import com.intellij.codeInspection.LocalQuickFixProvider
+import com.intellij.find.actions.ShowUsagesAction
+import com.intellij.openapi.fileEditor.FileEditorManager
+import com.intellij.openapi.project.DumbService
+import com.intellij.openapi.ui.popup.JBPopupFactory
 import com.intellij.openapi.util.TextRange
 import com.intellij.psi.*
 import com.intellij.psi.impl.FakePsiElement
@@ -11,7 +15,9 @@ import com.intellij.psi.injection.ReferenceInjector
 import com.intellij.psi.meta.PsiMetaData
 import com.intellij.psi.meta.PsiMetaOwner
 import com.intellij.psi.meta.PsiPresentableMetaData
+import com.intellij.psi.search.GlobalSearchScope
 import com.intellij.psi.search.GlobalSearchScope.projectScope
+import com.intellij.psi.search.SearchScope
 import com.intellij.psi.search.searches.AnnotatedElementsSearch
 import com.intellij.util.ArrayUtil
 import com.intellij.util.ProcessingContext
@@ -58,7 +64,9 @@ class KafkaTopicInjector : ReferenceInjector() {
             return topics
         }
 
-        private fun validate(value: String): Boolean = value.isNotBlank() && !value.contains("\\s")
+        private fun validate(value: String): Boolean {
+            return value.isNotBlank() && !value.contains(Regex("\\s"))
+        }
 
         override fun resolve(): PsiElement? {
             val value = value
@@ -122,13 +130,32 @@ class KafkaTopicInjector : ReferenceInjector() {
             return typeName
         }
 
+        override fun getResolveScope(): GlobalSearchScope {
+            return GlobalSearchScope.allScope(project)
+        }
+
+        override fun getUseScope(): SearchScope {
+            return GlobalSearchScope.allScope(project)
+        }
+
         override fun getNavigationElement(): PsiElement {
-            return parent
+            return this
         }
 
         override fun isEquivalentTo(another: PsiElement?): Boolean {
             return equals(another) ||
                     another != null && another is KafkaTopicPsiElement && another.topicId == topicId
+        }
+
+        override fun navigate(requestFocus: Boolean) {
+            if (DumbService.getInstance(project).isDumb) return
+            val editor = FileEditorManager.getInstance(project).selectedTextEditor ?: return
+            val popupPosition = JBPopupFactory.getInstance().guessBestPopupLocation(editor)
+
+            ShowUsagesAction().startFindUsages(
+                this, popupPosition, editor,
+                ShowUsagesAction.getUsagesPageSize()
+            )
         }
     }
 }

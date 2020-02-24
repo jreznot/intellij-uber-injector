@@ -43,7 +43,7 @@ class TeammateInjector : ReferenceInjector() {
             val value = value
             if (!validate(value)) return null
 
-            return TeammatePsiElement(element, getReferenceTypeName())
+            return TeammatePsiElement(element, getReferenceTypeName(), value)
         }
 
         override fun getUnresolvedMessagePattern(): String {
@@ -55,7 +55,7 @@ class TeammateInjector : ReferenceInjector() {
         }
 
         override fun isReferenceTo(element: PsiElement): Boolean {
-            return element is TeammatePsiElement
+            return element is TeammatePsiElement && element.value == value
         }
 
         override fun getVariants(): Array<Any> {
@@ -65,7 +65,8 @@ class TeammateInjector : ReferenceInjector() {
 
     class TeammatePsiElement(
         private val parent: PsiElement,
-        private val typeName: String
+        private val typeName: String,
+        val value: String
     ) : FakePsiElement(), PsiMetaOwner, PsiPresentableMetaData {
 
         override fun getName(): String {
@@ -104,6 +105,11 @@ class TeammateInjector : ReferenceInjector() {
 
         override fun canNavigate(): Boolean {
             return true
+        }
+
+        override fun isEquivalentTo(another: PsiElement?): Boolean {
+            return equals(another) ||
+                    another != null && another is TeammatePsiElement && another.value == value
         }
 
         override fun navigate(requestFocus: Boolean) {
