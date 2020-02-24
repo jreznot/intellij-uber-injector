@@ -83,10 +83,6 @@ class KafkaTopicInjector : ReferenceInjector() {
             return emptyArray()
         }
 
-        override fun isReferenceTo(element: PsiElement): Boolean {
-            return element is KafkaTopicPsiElement && this.value == element.topicId
-        }
-
         override fun getVariants(): Array<Any> {
             return ArrayUtil.toObjectArray(getReferenceVariants().map {
                 LookupElementBuilder.create(it).withIcon(UberInjectorIcons.MESSAGES)

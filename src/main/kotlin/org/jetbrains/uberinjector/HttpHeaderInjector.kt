@@ -53,7 +53,7 @@ class HttpHeaderInjector : ReferenceInjector() {
             val value = value
             if (!validate(value)) return null
 
-            return HttpHeaderPsiElement(element, getReferenceTypeName())
+            return HttpHeaderPsiElement(element, getReferenceTypeName(), value)
         }
 
         override fun getUnresolvedMessagePattern(): String {
@@ -62,10 +62,6 @@ class HttpHeaderInjector : ReferenceInjector() {
 
         override fun getQuickFixes(): Array<LocalQuickFix>? {
             return arrayOf(AddCustomHttpHeaderFix(myElement))
-        }
-
-        override fun isReferenceTo(element: PsiElement): Boolean {
-            return element is HttpHeaderPsiElement
         }
 
         override fun getVariants(): Array<Any> {
@@ -77,7 +73,8 @@ class HttpHeaderInjector : ReferenceInjector() {
 
     class HttpHeaderPsiElement(
         private val parent: PsiElement,
-        private val typeName: String
+        private val typeName: String,
+        private val value: String
     ) : FakePsiElement(), PsiMetaOwner, PsiPresentableMetaData {
 
         override fun getName(): String {
@@ -112,6 +109,11 @@ class HttpHeaderInjector : ReferenceInjector() {
 
         override fun getNavigationElement(): PsiElement {
             return parent
+        }
+
+        override fun isEquivalentTo(another: PsiElement?): Boolean {
+            return equals(another) ||
+                    another != null && another is HttpHeaderPsiElement && another.value == value
         }
     }
 

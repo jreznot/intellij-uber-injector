@@ -43,7 +43,7 @@ class MimeTypeInjector : ReferenceInjector() {
             val value = value
             if (!validate(value)) return null
 
-            return MimeTypePsiElement(element, getReferenceTypeName())
+            return MimeTypePsiElement(element, getReferenceTypeName(), value)
         }
 
         override fun getUnresolvedMessagePattern(): String {
@@ -67,7 +67,8 @@ class MimeTypeInjector : ReferenceInjector() {
 
     class MimeTypePsiElement(
         private val parent: PsiElement,
-        private val typeName: String
+        private val typeName: String,
+        val value: String
     ) : FakePsiElement(), PsiMetaOwner, PsiPresentableMetaData {
 
         override fun getName(): String {
@@ -102,6 +103,11 @@ class MimeTypeInjector : ReferenceInjector() {
 
         override fun getNavigationElement(): PsiElement {
             return parent
+        }
+
+        override fun isEquivalentTo(another: PsiElement?): Boolean {
+            return equals(another) ||
+                    another != null && another is MimeTypePsiElement && another.value == value
         }
     }
 }

@@ -54,10 +54,6 @@ class TeammateInjector : ReferenceInjector() {
             return emptyArray()
         }
 
-        override fun isReferenceTo(element: PsiElement): Boolean {
-            return element is TeammatePsiElement && element.value == value
-        }
-
         override fun getVariants(): Array<Any> {
             return emptyArray()
         }
@@ -66,7 +62,7 @@ class TeammateInjector : ReferenceInjector() {
     class TeammatePsiElement(
         private val parent: PsiElement,
         private val typeName: String,
-        val value: String
+        private val value: String
     ) : FakePsiElement(), PsiMetaOwner, PsiPresentableMetaData {
 
         override fun getName(): String {
