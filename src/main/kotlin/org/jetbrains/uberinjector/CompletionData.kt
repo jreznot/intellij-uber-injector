@@ -3,7 +3,7 @@ package org.jetbrains.uberinjector
 import java.util.regex.Pattern
 
 object CompletionData {
-    val MIME_PATTERN = Pattern.compile("[^\\p{Cc}^\\s]+/[^\\p{Cc}^\\s]+")
+    val MIME_PATTERN: Pattern = Pattern.compile("[^\\p{Cc}^\\s]+/[^\\p{Cc}^\\s]+")
 
     val MIME_TYPES = listOf(
         "application/json",
