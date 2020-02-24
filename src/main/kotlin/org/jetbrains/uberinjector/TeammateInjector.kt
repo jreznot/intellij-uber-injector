@@ -25,6 +25,8 @@ class TeammateInjector : ReferenceInjector() {
 
     override fun getDisplayName(): String = "Teammate Username"
 
+    override fun getIcon(): Icon = UberInjectorIcons.USERS
+
     override fun getReferences(element: PsiElement, context: ProcessingContext, range: TextRange): Array<PsiReference> {
         return arrayOf(TeammateReference(element))
     }
